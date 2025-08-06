@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.671,=C:\Stella\ALCAD\DXFExplorX\_About.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.179,C:\Users\Lenovo\Documents\RAD Studio\Projects\Unit18.dfm=C:\Stella\ALCAD\DXFExplorX\MainDXF.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.098,C:\Users\Lenovo\Documents\RAD Studio\Projects\Project17.dproj=C:\Stella\ALCAD\DXFExplorX\DXFExplorX.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.179,C:\Users\Lenovo\Documents\RAD Studio\Projects\Unit18.pas=C:\Stella\ALCAD\DXFExplorX\MainDXF.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.127,=C:\Users\Lenovo\Documents\RAD Studio\Projects\Unit18.pas</Transaction>
+  </Transactions>
+</BorlandProject>

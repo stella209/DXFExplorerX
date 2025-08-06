@@ -1,0 +1,50 @@
+<html><head><title>TjanLanguage</title></head>
+<body>
+<font face="arial">
+<h3>TjanLanguage</h3>
+<i>by Jan Verhoeven</i>
+<p>TjanLanguage is a TComponent descendant that allows you to give the users of your program the ability to change all captions,text and hints of any component in the user interface like menus, buttons, labels, listbox items etc. All this with only 2 lines of code!</p>
+
+<h4>Copyright</h4>
+<p>This component is an orginal Delphi component created by <font color=maroon>Jan Verhoeven</font> and offered as freeware for free use in any application including commercial applications. You are free to copy and modify the source code provided you do not remove the originator comments.</p>
+
+<h4>Update</h4>
+For updates or other components that I created check<br>
+<a href="http://members.xoom.com/JanVee/jfdelphi.htm">JanSoft Components</a> or <a href="mailto:jan1.verhoeven@wxs.nl">Email</a>
+
+<h4>How to use?</h4>
+<p>The component is designed for minimal coding:</p>
+
+<ol>
+<li>Drop it on the form
+<li>In the forms onCreate event handler:
+<pre>janLanguage1.InitLanguage(self)</pre>
+<li>Add a 'Language' Menu item somewhere in your main menu
+<li>In the Language menu onclick event handler:
+<pre>janLanguage1.ChangeLanguage(self)</pre>
+<li>Do this for all the forms of your application.
+</ol>
+<p>That is all!</p>
+<hr width=80%>
+<h4>Public Methods</h4>
+TjanLanguage has only two public methods:<br>
+<br>
+<b>procedure</b> InitLanguage(AForm:TForm);<br>
+<p>This will look in the ini file for the language file to use and will set captions, hints and text accordingly when found. In addition this method call will create/refresh the <font color=maroon>Language.lng</font> file.</p>
+<p>If no language entry is found the default <i>Language.lng</i> will be used.</p>
+
+
+<b>procedure</b> ChangeLanguage(AForm:Tform);<br>
+<br>
+<p>This will show a file open dialog for the user to select a language file. If a language file is selected it will be loaded and all captions, text, hints etc will be set according the language file. In addition the name of the selected language file is stored in the programs ini file.</p>
+<hr width=80%>
+<h4>Language Files</h4>
+<p>Language Files are in fact ini files with one section: [TRANSLATIONS], and possibly a whole range of section values.</p>
+<p>The general form of each entry in the language file is:
+<pre>FormName.ComponentName.PropertyName=PropertyValue</pre></p>
+<p>You will understand that when you use this component in your programs and that when you use component names like 'button1','label3', etc. you are making it not easy for your users to create their own language files. Use very descriptive component names.</p>
+<p>Your users will typically create a renamed copy of the <i>Language.lng</i> file and modify the <i>PropertyValue</i> parts in e.g. Windows Notepad.</p>
+<p>Any carriage returns in captions, text or hints is replaced by '~~' when written to the language file and reverted to cariage returns when read from the language file.</p>
+
+</font>
+</body></html>
